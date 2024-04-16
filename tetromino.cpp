@@ -1,6 +1,5 @@
 #include "tetromino.h"
 #include "console/console.h"
-#include "game.h"
 #include "util.h"
 
 Tetromino Tetromino::I("I", 4, "XXXXOOOOXXXXXXXX");
