@@ -142,7 +142,8 @@ void Game::drawScores() {
     std::string scoreStr = "";
     scoreStr.append(std::to_string(sc >= 0 ? sc : 0) + " ");
     scoreStr.append("lines left");
-    int xCenter = ((BOARD_WIDTH + 2) - scoreStr.size()) / 2;
+    int scoreSize = scoreStr.size();
+    int xCenter = ((BOARD_WIDTH + 2) - scoreSize) / 2;
     console::draw(xCenter >= 0 ? xCenter : 0, BOARD_HEIGHT+2, scoreStr);
 }
 
