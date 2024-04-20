@@ -240,6 +240,8 @@ void Game::update() {
                 }
             }
         }
+    } else if (console::key(console::K_ESC)) {
+        exit(0);
     }
     updateBoard();
 }
