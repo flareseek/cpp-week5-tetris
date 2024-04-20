@@ -82,9 +82,8 @@ Game::Game() : currentBlock_(generateRandomTetromino()), nextBlock_(generateRand
     holdBlock_ = nullptr;
     score_ = 0;
     moveFrame_ = DROP_DELAY;
-    currentPoint_[0] = -1;
-    currentPoint_[1] = -1;
-    resetBlock();
+    currentPoint_[0] = BOARD_WIDTH / 2 - this->currentBlock_.size() / 2;
+    currentPoint_[1] = 0;
 
     for (int i = 0; i < BOARD_WIDTH; i++) {
         for (int j = 0; j < BOARD_HEIGHT; j++) {
